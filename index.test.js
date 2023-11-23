@@ -1,8 +1,8 @@
-const File = require('./src/file');
-const {error} = require('./src/constant');
-const assert = require('assert:node')
+const File = require('./src/file')
+const {error} = require('./src/constant')
+const assert = require('assert')
 
-(
+;(
     async () => {
         {
             const filePath = './mocks/emptyFile-invalid.csv'
