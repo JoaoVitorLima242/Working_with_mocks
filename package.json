@@ -1,0 +1,14 @@
+{
+  "name": "working_with_mocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "author": "JoaoVitorLima242",
+  "license": "ISC"
+}
