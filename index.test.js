@@ -35,7 +35,7 @@ const assert = require('assert')
                 {"id": 3, "name": "Carlos", "profession": "Professor", "age": 40}
             ]
             
-            const result = File.csvToJson(filePath)
+            const result = await File.csvToJson(filePath)
 
             assert.deepEqual(result, expected)
         }

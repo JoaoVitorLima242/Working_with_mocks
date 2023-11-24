@@ -17,7 +17,22 @@ class File {
     }
 
     static parseCSVToJSON(csvString) {
-        return csvString
+        const lines = csvString.split(/\r?\n/)
+        const firstLine = lines.shift()
+        const header = firstLine.split(',')
+
+        const users = lines.map(line => {
+            const columns = line.split(',')
+            const user = {}
+
+            for(const index in columns) {
+                user[header[index]] = columns[index].trim()
+            }
+
+            return user
+        })
+
+        return users
     }
 
     static isValid(csvString, option = DEFAULT_OPTION) {
